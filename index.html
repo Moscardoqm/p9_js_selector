@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p9_js_selector</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").hide();
+            $("p").hide();
+            /*$(".btn2").click(function(){
+                $(this).hide();
+            });*/
+
+            $("img").right();
+            $("#btn1").click(function(){
+                $("img").show();
+            });
+            $("#btn1").click(function(){
+                $("img").hide();
+            });
+        });
+    </script>
+    <style>
+        .img{
+            width: 500px;
+            height: 300px;
+            align-items: center;
+        }
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        }
+        div{
+            width: 500px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+
+    </div>
+    <div class="dos">
+
+    </div>
+    <button id="btn1" type="button">Baila!</button>
+    <img id="img1" src="img/person_dancing.png" alt="png">
+    <img id="img2"src="img/person_dancing2.png" alt="png">
+</body>
+</html>
